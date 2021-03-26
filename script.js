@@ -1,10 +1,12 @@
+MILE_IN_KM = 1.609344
+
 window.addEventListener('DOMContentLoaded', main);
 
 function main() {
   document.getElementById('i1').addEventListener('input', () =>
-    process('i1', 'i2', 1.6));
+    process('i1', 'i2', MILE_IN_KM));
   document.getElementById('i2').addEventListener('input', () =>
-    process('i2', 'i1', 1 / 1.6));
+    process('i2', 'i1', 1 / MILE_IN_KM));
 }
 
 function process(input, target, factor) {
