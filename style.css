@@ -23,9 +23,10 @@ h1 {
 }
 
 .content input {
-    height: 3em;
+    height: 2em;
     width: 20em;
     font-size: 1em;
+    padding: 0.5em;
 }
 
 .exchange {
