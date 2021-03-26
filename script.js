@@ -16,10 +16,10 @@ function process(input, target, factor) {
   if (!values  || values.length !== 1 || values[0][0] !== value ||
       values[0][1] < 0 || 59 < values[0][1] || values[0][2] < 0 || 59 < values[0][2]) {
     document.getElementById(target).value = '';
-    document.getElementById(target).setCustomValidity('Invalid input');
+    document.getElementById(input).setCustomValidity('Invalid input');
     return;
   }
-  document.getElementById(target).setCustomValidity('');
+  document.getElementById(input).setCustomValidity('');
   let secs = 0;
   secs += parseInt(values[0][1], 10) * 60;
   if (values[0][2]) {
